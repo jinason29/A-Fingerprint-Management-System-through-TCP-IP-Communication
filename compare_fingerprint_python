@@ -24,9 +24,13 @@ try:
  ##converts read image to characteristics and stores it in charbuffer 1
     f.convertImage(0x01)
     cur= conn.cursor()
-    sql = "select * from finger_template"  # finger template 이름의 table
-    cur. execute(sql,(characterics,'2','number2'))
-    conn.commit()
+    sql = "select * from finger_template"
+    # finger template 이름의 table
+    cur. execute(sql)
+    for row in cur.fetchall():
+        print(f.uploadCharacteristics(0x02, eval(row[0])))
+        score-f.compareCharacteristics()
+        print(score)  ##두 지문간 특성을 비교하여 유사도를 정수형으로 score 변수에 저장
     
 execpt Execption as e:
     print('Operation failed!')
