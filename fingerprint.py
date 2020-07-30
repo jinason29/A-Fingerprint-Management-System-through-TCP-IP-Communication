@@ -1,5 +1,5 @@
 from pyfingerprint.pyfingerprint import PyFingerprint
-import pymtsql
+import pymysql
 conn=pymysql.connect(host="--.--.--.--",
                                user="---",
                                passwd="---",
