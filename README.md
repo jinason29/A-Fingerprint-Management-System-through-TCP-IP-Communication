@@ -3,10 +3,15 @@ A program that manages fingerprint recognition sensor values of users through TC
 
 
 프로젝트 소개
+
+
 RaspberryPi를 통해 사용자의 지문 데이터, ID, 보안 등급 등의 정보를 DB로 관리하고 tkinter에서 GUI 출퇴근을 관리하는 시스템
+
 ======================================================================================================================
 
 수행 내용
+
+
 RaspberryPi에서 사용자의 지문을 인식
 데이터베이스를 구축하여 해당 정보를 데이터베이스에 저장 
 사용자의 ID 및 보안등급을 지문에 따라 저장
